@@ -1,0 +1,15 @@
+release/beifen.o
+release/domainmanagementsystem.o
+release/domainnode.o
+release/login.o
+release/main.o
+release/mainwindow.o
+release/page_forget.o
+release/page_register.o
+release/qrc_ioc.o
+release/moc_beifen.o
+release/moc_domainmanagementsystem.o
+release/moc_login.o
+release/moc_mainwindow.o
+release/moc_page_forget.o
+release/moc_page_register.o

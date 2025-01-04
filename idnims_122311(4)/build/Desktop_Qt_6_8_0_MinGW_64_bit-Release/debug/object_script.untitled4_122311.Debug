@@ -1,0 +1,15 @@
+debug/beifen.o
+debug/domainmanagementsystem.o
+debug/domainnode.o
+debug/login.o
+debug/main.o
+debug/mainwindow.o
+debug/page_forget.o
+debug/page_register.o
+debug/qrc_ioc.o
+debug/moc_beifen.o
+debug/moc_domainmanagementsystem.o
+debug/moc_login.o
+debug/moc_mainwindow.o
+debug/moc_page_forget.o
+debug/moc_page_register.o

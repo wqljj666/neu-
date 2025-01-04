@@ -1,0 +1,1915 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1058</width>
+    <height>608</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">#centralwidget{background-image: url(:/new/prefix1/loginbackground.jpeg);}</string>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>931</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="page_6">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>10</y>
+        <width>577</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 700 24pt &quot;Microsoft YaHei UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>欢迎来到互联网域名信息管理系统！</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="sure_4">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>420</y>
+        <width>191</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: rgb(90, 194, 198);
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 11pt;
+	font-weight: bold;
+	color: white;
+}
+
+QPushButton:hover {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: #1fab89;
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 10pt;
+	font-weight: bold;
+	color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string> 数据备份</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="sure_5">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>390</y>
+        <width>191</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: rgb(90, 194, 198);
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 11pt;
+	font-weight: bold;
+	color: white;
+}
+
+QPushButton:hover {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: #1fab89;
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 10pt;
+	font-weight: bold;
+	color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string> 使用说明</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="listWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>90</y>
+        <width>581</width>
+        <height>341</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string> 工作日志</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+       <property name="background">
+        <brush brushstyle="NoBrush">
+         <color alpha="255">
+          <red>255</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>10</y>
+        <width>641</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>                                                                      1、全量展示</string>
+      </property>
+     </widget>
+     <widget class="QTreeWidget" name="treeWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>891</width>
+        <height>361</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>域名</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>类型</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>描述</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>领域</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="sure_7">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>40</y>
+        <width>82</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>82</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: rgb(90, 194, 198);
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 11pt;
+	font-weight: bold;
+	color: white;
+}
+
+QPushButton:hover {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: #1fab89;
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 10pt;
+	font-weight: bold;
+	color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string> 搜索</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>241</x>
+        <y>41</y>
+        <width>491</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="keyword_2">
+         <property name="font">
+          <font>
+           <family>Microsoft New Tai Lue</family>
+           <pointsize>10</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgba(0, 255, 255, 250);
+background-color: rgb(251, 212, 231);
+font: 14qt &quot;Microsoft New Tai Lue&quot;;</string>
+         </property>
+         <property name="text">
+          <string> 网址搜索框：</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="urlInput"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <widget class="QTreeWidget" name="treeWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>531</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>域名</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>类型</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>描述</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>领域</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>531</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft New Tai Lue</family>
+        <pointsize>20</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgba(0, 255, 255, 250);
+background-color: rgb(251, 212, 231);
+font: 20pt &quot;Microsoft New Tai Lue&quot;;</string>
+      </property>
+      <property name="text">
+       <string>                                    2、创建域名</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="robot">
+      <property name="geometry">
+       <rect>
+        <x>830</x>
+        <y>50</y>
+        <width>81</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> 
+background-color: rgb(251, 212, 231);
+border-color: rgb(0, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;:/new/prefix1/QQ20241226-201917.png&quot;/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;https://webnames-2024.streamlit.app/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#007af4;&quot;&gt;网络域名助手&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="openExternalLinks">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>619</x>
+        <y>190</y>
+        <width>201</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>网络</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>教育</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>科技</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>社交</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>商务</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>广告</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>搜索</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>娱乐</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>电商</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>云计算</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>办公</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>开发</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>博客</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>设计</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>通信</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>云储存</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>时间管理</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>安全</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>网络安全</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>音乐</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>视频</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>支付</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>协作</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>会议</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>旅行</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>票务</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>团购</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>摄影</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>生活</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>问答</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>新闻</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>开源软件</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>网络基础设施</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>医学研究</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>版权许可</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>出版</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>倡导</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>隐私保护</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>直播</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="sure_2">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>230</y>
+        <width>251</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: rgb(90, 194, 198);
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 11pt;
+	font-weight: bold;
+	color: white;
+}
+
+QPushButton:hover {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: #1fab89;
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 10pt;
+	font-weight: bold;
+	color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string> 确定</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="descritpion">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>160</y>
+        <width>201</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="descritpion_name">
+      <property name="geometry">
+       <rect>
+        <x>573</x>
+        <y>160</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft New Tai Lue</family>
+        <pointsize>10</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgba(0, 255, 255, 250);
+background-color: rgb(251, 212, 231);
+font: 14qt &quot;Microsoft New Tai Lue&quot;;</string>
+      </property>
+      <property name="text">
+       <string> 描述：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="my_name_name">
+      <property name="geometry">
+       <rect>
+        <x>573</x>
+        <y>132</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft New Tai Lue</family>
+        <pointsize>10</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgba(0, 255, 255, 250);
+background-color: rgb(251, 212, 231);
+font: 14qt &quot;Microsoft New Tai Lue&quot;;</string>
+      </property>
+      <property name="text">
+       <string> 域名：</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="myname">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>132</y>
+        <width>201</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="father">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>104</y>
+        <width>201</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="father_name">
+      <property name="geometry">
+       <rect>
+        <x>573</x>
+        <y>104</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft New Tai Lue</family>
+        <pointsize>10</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgba(0, 255, 255, 250);
+background-color: rgb(251, 212, 231);
+font: 14qt &quot;Microsoft New Tai Lue&quot;;</string>
+      </property>
+      <property name="text">
+       <string> 父域名：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="combpBox_name">
+      <property name="geometry">
+       <rect>
+        <x>572</x>
+        <y>190</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft New Tai Lue</family>
+        <pointsize>10</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgba(0, 255, 255, 250);
+background-color: rgb(251, 212, 231);
+font: 14qt &quot;Microsoft New Tai Lue&quot;;</string>
+      </property>
+      <property name="text">
+       <string> 类型：</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="searchBox_2">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>50</y>
+        <width>241</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string> 手动输入</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>文件读取</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>随机生成（问问AI）</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>随机生成</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QListWidget" name="tuijian">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>280</y>
+        <width>341</width>
+        <height>221</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="keyword_1">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>80</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft New Tai Lue</family>
+        <pointsize>10</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgba(0, 255, 255, 250);
+background-color: rgb(251, 212, 231);
+font: 14qt &quot;Microsoft New Tai Lue&quot;;</string>
+      </property>
+      <property name="text">
+       <string> 关键字：</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="keyword">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>80</y>
+        <width>151</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="sure_6">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>80</y>
+        <width>82</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>82</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: rgb(90, 194, 198);
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 11pt;
+	font-weight: bold;
+	color: white;
+}
+
+QPushButton:hover {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: #1fab89;
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 10pt;
+	font-weight: bold;
+	color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string> 搜索</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="searchcomboBox_3">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>250</y>
+        <width>341</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>该模式下选择域名等级查找</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>一级域</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>二级域</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>三级域</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>四级域</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>五级域</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QTreeWidget" name="treeWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>471</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>域名</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>类型</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>描述</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>领域</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>0</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft New Tai Lue</family>
+        <pointsize>20</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgba(0, 255, 255, 250);
+background-color: rgb(251, 212, 231);
+font: 20pt &quot;Microsoft New Tai Lue&quot;;</string>
+      </property>
+      <property name="text">
+       <string>     3、删除域名</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>40</y>
+        <width>281</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLineEdit" name="lineEdit_4">
+         <property name="placeholderText">
+          <string>输入想删除的网址</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="PB_delete">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: rgb(90, 194, 198);
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 11pt;
+	font-weight: bold;
+	color: white;
+}
+
+QPushButton:hover {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: #1fab89;
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 10pt;
+	font-weight: bold;
+	color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string>删除域名</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>481</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft New Tai Lue</family>
+        <pointsize>20</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgba(0, 255, 255, 250);
+background-color: rgb(251, 212, 231);
+font: 20pt &quot;Microsoft New Tai Lue&quot;;</string>
+      </property>
+      <property name="text">
+       <string>                               4、修改域名</string>
+      </property>
+     </widget>
+     <widget class="QTreeWidget" name="treeWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>1</x>
+        <y>41</y>
+        <width>491</width>
+        <height>471</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>域名</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>类型</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>描述</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>领域</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="PB_modifyConfirm">
+      <property name="geometry">
+       <rect>
+        <x>531</x>
+        <y>170</y>
+        <width>281</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: rgb(90, 194, 198);
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 11pt;
+	font-weight: bold;
+	color: white;
+}
+
+QPushButton:hover {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: #1fab89;
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 10pt;
+	font-weight: bold;
+	color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>确认修改</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>614</x>
+        <y>52</y>
+        <width>191</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>532</x>
+        <y>52</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgba(0, 255, 255, 250);
+background-color: rgb(251, 212, 231);
+font: 15pt &quot;Microsoft New Tai Lue&quot;;</string>
+      </property>
+      <property name="text">
+       <string> 全路径名：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_des">
+      <property name="geometry">
+       <rect>
+        <x>532</x>
+        <y>93</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgba(0, 255, 255, 250);
+background-color: rgb(251, 212, 231);
+font: 15pt &quot;Microsoft New Tai Lue&quot;;</string>
+      </property>
+      <property name="text">
+       <string> 描述：</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="des1">
+      <property name="geometry">
+       <rect>
+        <x>616</x>
+        <y>93</y>
+        <width>191</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_modify">
+      <property name="geometry">
+       <rect>
+        <x>616</x>
+        <y>134</y>
+        <width>191</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>网络</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>教育</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>科技</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>社交</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>商务</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>广告</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>搜索</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>娱乐</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>电商</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>云计算</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>办公</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>开发</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>博客</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>设计</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>通信</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>云储存</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>时间管理</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>安全</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>网络安全</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>音乐</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>视频</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>支付</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>协作</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>会议</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>旅行</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>票务</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>团购</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>摄影</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>生活</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>问答</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>新闻</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>开源软件</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>网络基础设施</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>医学研究</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>版权许可</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>出版</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>倡导</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>隐私保护</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>直播</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>532</x>
+        <y>134</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgba(0, 255, 255, 250);
+background-color: rgb(251, 212, 231);
+font: 15pt &quot;Microsoft New Tai Lue&quot;;</string>
+      </property>
+      <property name="text">
+       <string> 类型：</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_5">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>1</x>
+        <y>-3</y>
+        <width>441</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft New Tai Lue</family>
+        <pointsize>20</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgba(0, 255, 255, 250);
+background-color: rgb(251, 212, 231);
+font: 20pt &quot;Microsoft New Tai Lue&quot;;</string>
+      </property>
+      <property name="text">
+       <string>                       5、搜索域名</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>30</y>
+        <width>451</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <column>
+       <property name="text">
+        <string>全域名</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>类型</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string> 描述</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string> 类型</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string/>
+       </property>
+      </column>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>40</y>
+        <width>461</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QComboBox" name="searchBox">
+         <item>
+          <property name="text">
+           <string>网址搜索</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>等级搜索</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>描述搜索</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>关键字搜索</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_3">
+         <property name="placeholderText">
+          <string>输入搜索内容</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="searchcomboBox_2">
+         <property name="toolTip">
+          <string>该模式下选择域名等级查找</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>一级域</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>二级域</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>三级域</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>四级域</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>五级域</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="PB_search">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: rgb(90, 194, 198);
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 11pt;
+	font-weight: bold;
+	color: white;
+}
+
+QPushButton:hover {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: #1fab89;
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 10pt;
+	font-weight: bold;
+	color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string>搜索</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_7">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>931</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft New Tai Lue</family>
+        <pointsize>20</pointsize>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgba(0, 255, 255, 250);
+background-color: rgb(251, 212, 231);
+font: 20pt &quot;Microsoft New Tai Lue&quot;;</string>
+      </property>
+      <property name="text">
+       <string>                                                             6、域名相关统计</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="show_table" native="true">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>70</y>
+        <width>631</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <widget class="QListWidget" name="listWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>601</width>
+         <height>371</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>141</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QPushButton" name="s_level_1">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: rgb(90, 194, 198);
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 11pt;
+	font-weight: bold;
+	color: white;
+}
+
+QPushButton:hover {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: #1fab89;
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 10pt;
+	font-weight: bold;
+	color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string> 域名等级</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="s_level_2">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: rgb(90, 194, 198);
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 11pt;
+	font-weight: bold;
+	color: white;
+}
+
+QPushButton:hover {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: #1fab89;
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 10pt;
+	font-weight: bold;
+	color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string> 领域统计</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="s_level_3">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: rgb(90, 194, 198);
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 11pt;
+	font-weight: bold;
+	color: white;
+}
+
+QPushButton:hover {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: #1fab89;
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 10pt;
+	font-weight: bold;
+	color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string> 条形叠状图1</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="s_level_4">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: rgb(90, 194, 198);
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 11pt;
+	font-weight: bold;
+	color: white;
+}
+
+QPushButton:hover {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: #1fab89;
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 10pt;
+	font-weight: bold;
+	color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string> 条形叠状图2</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>36</x>
+      <y>20</y>
+      <width>581</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgba(0, 255, 255, 250);
+background-color: rgb(251, 212, 231);
+font: 25pt &quot;Microsoft New Tai Lue&quot;;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;     互联网域名信息管理系统&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>40</y>
+      <width>172</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="PB_lastPage">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: rgb(90, 194, 198);
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 11pt;
+	font-weight: bold;
+	color: white;
+}
+
+QPushButton:hover {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: #1fab89;
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 10pt;
+	font-weight: bold;
+	color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>上一页</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="PB_nextPage">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: rgb(90, 194, 198);
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 11pt;
+	font-weight: bold;
+	color: white;
+}
+
+QPushButton:hover {
+	border: 0.5px solid white;
+	border-radius: 6px;
+	background-color: #1fab89;
+	min-width: 80px;
+	font-family: &quot;Times New Roman&quot;;
+	font-size: 10pt;
+	font-weight: bold;
+	color: white;
+}</string>
+       </property>
+       <property name="text">
+        <string>下一页</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QDateTimeEdit" name="dateTimeEdit">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>20</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
+    </property>
+    <property name="accelerated">
+     <bool>false</bool>
+    </property>
+    <property name="showGroupSeparator" stdset="0">
+     <bool>true</bool>
+    </property>
+    <property name="date">
+     <date>
+      <year>2000</year>
+      <month>1</month>
+      <day>2</day>
+     </date>
+    </property>
+    <property name="calendarPopup">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1058</width>
+     <height>18</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
